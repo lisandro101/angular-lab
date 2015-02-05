@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app="githubReposApp">
+<head>
+  <meta charset="utf-8">
+  <title>Github Starred Repos</title>
+  <script src="angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="ReposCtrl">
+
+  <p>Github Starred Repos</p>
+  <div>
+        <ul>
+          <li ng-repeat="repo in repos">
+            <p>{{repo.name}}</p>
+          </li>
+        </ul>
+
+      </div>
+
+</body>
+</html>
