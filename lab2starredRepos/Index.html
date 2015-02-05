@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Github Starred Repos</title>
-  <script src="angular/angular.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
 </head>
 <body ng-controller="ReposCtrl">
 
-  <p>Github Starred Repos</p>
+  <h1>Github Starred Repos</h1>
+  User: <input ng-model="user"> <button ng-click="getRepoData()">OK</button>
   <div>
         <ul>
           <li ng-repeat="repo in repos">
@@ -17,6 +20,5 @@
         </ul>
 
       </div>
-
 </body>
 </html>
