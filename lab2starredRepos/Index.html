@@ -1,24 +1,18 @@
 <!doctype html>
-<html lang="en" ng-app="githubReposApp">
-<head>
-  <meta charset="utf-8">
-  <title>Github Starred Repos</title>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/services.js"></script>
-</head>
-<body ng-controller="ReposCtrl">
-
-  <h1>Github Starred Repos</h1>
-  User: <input ng-model="user"> <button ng-click="getRepoData()">OK</button>
-  <div>
-        <ul>
-          <li ng-repeat="repo in repos">
-            <p>{{repo.name}}</p>
-          </li>
-        </ul>
-
-      </div>
-</body>
+<html lang="en" ng-app="gitHubApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Github Starred Repos</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+  <body>
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
+    </div>
+  </body>
 </html>

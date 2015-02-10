@@ -1,0 +1,9 @@
+<h1>Github Starred Repos</h1>
+User: <input ng-model="user"> <button ng-click="getRepoData()">OK</button>
+<div> 
+	<ul>
+		<li ng-repeat="repo in repos">
+	  		<p>{{repo.name + '(' + repo.total + ')'}}</p>
+		</li>
+	</ul>
+</div>
